@@ -257,8 +257,8 @@
             font-size: 0.82rem;
             color: var(--text-secondary);
             text-decoration: none;
-            background: transparent;
-            border: 1px dashed var(--glass-border);
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
             border-radius: 10px;
             transition: var(--transition-smooth);
         }
@@ -465,9 +465,10 @@
         }
 
         .btn-social.outline {
-            background: transparent;
+            background: var(--bg-secondary);
             color: var(--text-primary);
-            border: 1px dashed var(--glass-border);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
         }
 
         .btn-social.outline:hover {
@@ -475,6 +476,7 @@
             color: var(--accent-emerald);
             background: var(--accent-light);
             transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.15);
         }
 
         /* --- CONTACT SECTION --- */
@@ -548,6 +550,16 @@
             color: var(--text-secondary);
             line-height: 1.6;
             margin: 0;
+        }
+
+        .contact-card-body a {
+            color: var(--accent-emerald);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-card-body a:hover {
+            text-decoration: underline;
         }
 
         .contact-card-action {
@@ -1291,7 +1303,7 @@
                                 </div>
                             </div>
                             <div class="contact-card-body">
-                                <p>Connect on Discord with <strong>PERO1999</strong> (<code>pero1999</code>). Official BedCraftMC network: <a href="https://discord.bedcraftmc.eu/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-emerald);">discord.bedcraftmc.eu</a>. <em>Note: No support in DMs for play.bedcraftmc.eu &mdash; please open a ticket!</em></p>
+                                <p>Connect on Discord with <strong>PERO1999</strong> (<code>pero1999</code>). Official BedCraftMC network: <a href="https://discord.bedcraftmc.eu/" target="_blank" rel="noopener noreferrer">discord.bedcraftmc.eu</a>. <em>Note: No support in DMs for play.bedcraftmc.eu &mdash; please open a ticket!</em></p>
                             </div>
                             <div class="contact-card-action">
                                 <a href="https://discord.bedcraftmc.eu/" class="btn-contact-action" target="_blank" rel="noopener noreferrer">
