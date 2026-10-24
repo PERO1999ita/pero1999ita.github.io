@@ -35,8 +35,11 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
 
 ```text
 pero1999ita.github.io/
-├── index.html      # Complete portfolio application (HTML, CSS, JS)
-└── README.md       # Repository documentation
+├── index.html        # Complete portfolio application (HTML, CSS, JS)
+├── CONTRIBUTING.md   # Contribution & collaboration guidelines
+├── LICENSE.md        # MIT license
+├── README.md         # Repository documentation
+└── SECURITY.md       # Vulnerability disclosure policy
 ```
 
 ---
@@ -50,5 +53,7 @@ pero1999ita.github.io/
 ---
 
 ## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 &copy; 2026 PERO1999. All rights reserved.
