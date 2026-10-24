@@ -47,3 +47,16 @@ We value coordinated vulnerability disclosure. If you discover a vulnerability, 
 - **Remediation**: Patches deployed within 7 business days depending on severity.
 - **Disclosure**: Public disclosure coordinated once production fixes are verified.
 - **Credit**: Responsible reporters will receive formal acknowledgment in release notes and commit history.
+
+---
+
+## 🔗 Repository Navigation & Policies
+
+- **Live Site**: [https://pero1999ita.github.io](https://pero1999ita.github.io)
+- **Documentation**: [README.md](README.md)
+- **Contribution Guidelines**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- **License & Brand Terms**: [LICENSE.md](LICENSE.md)
+- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — **PERO1999** (`pero1999`)
+- **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)
+
+&copy; 2026 **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)). All rights reserved.

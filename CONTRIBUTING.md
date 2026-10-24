@@ -1,12 +1,21 @@
 # Contributing & Collaboration Guidelines
 
-Thank you for your interest in contributing to **pero1999ita.github.io**! This document outlines our collaboration workflow, code quality expectations, and community standards for the portfolio of **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)).
+Thank you for your interest in contributing to **pero1999ita.github.io**! This document outlines our collaboration workflow, security standards, code quality expectations, and community policies for the portfolio of **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)).
 
 ---
 
 ## Code of Conduct
 
 All contributors, collaborators, and community members are expected to maintain a constructive, respectful, and professional environment across all issues, pull requests, and discussions.
+
+---
+
+## 🔒 Security Policy
+
+Security is paramount across all network platforms, server architectures, and web interfaces:
+- **Never report vulnerabilities publicly**: Do **not** open public issues or pull requests for security vulnerabilities.
+- **Reporting Protocol**: Follow the responsible disclosure guidelines documented in [SECURITY.md](SECURITY.md).
+- **Direct Contacts**: Reach out via Discord ticket on [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) to **PERO1999** (`pero1999`), or file a private security advisory on GitHub.
 
 ---
 
@@ -56,6 +65,8 @@ Before submitting a Pull Request, verify the following:
 - [ ] **Dual-Theme Compatibility**: All components must support both `[data-theme="dark"]` and `[data-theme="light"]` using CSS variables (`--bg-primary`, `--text-primary`, `--glass-bg`, etc.).
 - [ ] **Zero Inline Styles**: Use classes defined within `<style>` or dedicated stylesheet tokens.
 - [ ] **Security Compliance**: Any link opening in a new tab (`target="_blank"`) **must** include `rel="noopener noreferrer"`.
+- [ ] **Zero Secret Leaks**: Verify that no API keys, private tokens, webhook credentials, or sensitive network parameters are committed.
+- [ ] **Asset & Media Protection**: Do **not** modify, replace, or commercialize visual media in [`assets/`](assets/) (`avatar.jpg`, `bedcraft.png`). All brand assets are proprietary and non-commercial per [LICENSE.md](LICENSE.md).
 - [ ] **Responsive Design**: Test layouts on both desktop and mobile viewports (`<968px`) with zero horizontal overflow.
 - [ ] **Semantic Markup**: Maintain accessible HTML5 semantic hierarchy (`<aside>`, `<nav>`, `<main>`, `<section>`, `<article>`).
 - [ ] **Vanilla Architecture**: Keep the codebase lean and dependency-free (no external npm bundles or CDN frameworks unless strictly approved).
@@ -67,3 +78,16 @@ Before submitting a Pull Request, verify the following:
 For project partnerships, custom plugin architecture, or server infrastructure queries:
 - **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — Contact **PERO1999** (`pero1999`)
 - **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)
+
+---
+
+## 🔗 Repository Navigation & Policies
+
+- **Live Site**: [https://pero1999ita.github.io](https://pero1999ita.github.io)
+- **Documentation**: [README.md](README.md)
+- **Security Policy**: [SECURITY.md](SECURITY.md)
+- **License & Brand Terms**: [LICENSE.md](LICENSE.md)
+- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — **PERO1999** (`pero1999`)
+- **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)
+
+&copy; 2026 **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)). All rights reserved.

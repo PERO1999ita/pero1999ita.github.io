@@ -69,7 +69,19 @@ pero1999ita.github.io/
 
 ---
 
-## 📄 License
+## 📄 License & Policies
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-Copyright (c) 2026 **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)).
+This project is licensed under the MIT License (code) with proprietary asset restrictions - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+## 🔗 Repository Navigation & Policies
+
+- **Live Site**: [https://pero1999ita.github.io](https://pero1999ita.github.io)
+- **Security Policy**: [SECURITY.md](SECURITY.md)
+- **Contribution Guidelines**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- **License & Brand Restrictions**: [LICENSE.md](LICENSE.md)
+- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — **PERO1999** (`pero1999`)
+- **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)
+
+&copy; 2026 **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)). All rights reserved.
