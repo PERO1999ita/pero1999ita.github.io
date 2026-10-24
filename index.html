@@ -58,8 +58,8 @@
             bottom: 0;
             width: var(--sidebar-width);
             background: var(--glass-bg);
-            backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
             border-right: 1px solid var(--glass-border);
             box-shadow: var(--glass-shadow);
             padding: 3rem 2rem;
@@ -278,6 +278,14 @@
             text-decoration: underline;
         }
 
+        .project-link.in-dev {
+            color: var(--text-secondary);
+        }
+
+        .project-link.in-dev:hover {
+            text-decoration: none;
+        }
+
         /* --- EXPERIENCE SECTION (TIMELINE) --- */
         .timeline {
             position: relative;
@@ -438,8 +446,8 @@
                     <h1>Hi, I'm <span>PERO1999</span></h1>
                     <div class="role">SysAdmin & Software Developer</div>
                     <div class="social-container">
-                        <a href="https://discord.bedcraftmc.eu/" class="btn-social" target="_blank">Join Discord</a>
-                        <a href="https://github.com/PERO1999ita" class="btn-social secondary" target="_blank">GitHub Profile</a>
+                        <a href="https://discord.bedcraftmc.eu/" class="btn-social" target="_blank" rel="noopener noreferrer">Join Discord</a>
+                        <a href="https://github.com/PERO1999ita" class="btn-social secondary" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
                     </div>
                 </div>
             </section>
@@ -499,7 +507,7 @@
                                 <p class="project-desc">A Minecraft Server Network designed around high-quality execution. Showcases bespoke architectural elements alongside custom tailored gamemodes, including fully bespoke BedWars experiences.</p>
                             </div>
                             <div class="project-links">
-                                <a href="https://discord.bedcraftmc.eu/" class="project-link" target="_blank">Discord Hub &rarr;</a>
+                                <a href="https://discord.bedcraftmc.eu/" class="project-link" target="_blank" rel="noopener noreferrer">Discord Hub &rarr;</a>
                             </div>
                         </article>
 
@@ -509,7 +517,7 @@
                                 <p class="project-desc">High-tier dedicated Minecraft assets and platform adjustments including Solarium Client, SolarAnimations, and SolarMacros. Built dynamically in close ecosystem partnership with BedCraft Plugins.</p>
                             </div>
                             <div class="project-links">
-                                <span class="project-link" style="color: var(--text-secondary);">In Development</span>
+                                <span class="project-link in-dev">In Development</span>
                             </div>
                         </article>
 
