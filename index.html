@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PERO1999 | Portfolio</title>
     <style>
-        /* --- DESIGN SYSTEM & VARIABLES --- */
+        /* --- DESIGN SYSTEM & VARIABLES (DARK THEME) --- */
         :root {
-            --bg-primary: #f1f5f9;     /* Modern Light Gray Background */
-            --bg-secondary: #ffffff;   /* Pure White for Cards/Elements */
-            --text-primary: #0f172a;   /* Deep Slate/Near Black */
-            --text-secondary: #475569; /* Slate Gray */
-            --accent-emerald: #065f46; /* Deep Luxury Emerald */
-            --accent-mint: #cbd5e1;    /* Clean Gray Border Accent */
-            --accent-light: #f8fafc;   /* Ultra Light Gray Hover State */
+            --bg-primary: #0a0f1d;     /* Deep Void Dark Background */
+            --bg-secondary: #111827;   /* Sleek Dark Navy Card Background */
+            --text-primary: #f8fafc;   /* Crisp Pure White Text */
+            --text-secondary: #94a3b8; /* Muted Slate Gray Text */
+            --accent-emerald: #10b981; /* Vibrant Emerald Accent */
+            --accent-mint: #1e293b;    /* Dark Slate Border Accent */
+            --accent-light: #1e293b;   /* Hover State Dark Accent */
             --sidebar-width: 280px;
-            --glass-bg: rgba(255, 255, 255, 0.75);
-            --glass-border: rgba(15, 23, 42, 0.06);
-            --glass-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.04);
+            --glass-bg: rgba(17, 24, 39, 0.75);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
             --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
@@ -104,7 +104,7 @@
             color: var(--accent-emerald);
             background: var(--bg-secondary);
             font-weight: 600;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), inset 4px 0 0 var(--accent-emerald);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 4px 0 0 var(--accent-emerald);
         }
 
         .sidebar-footer {
@@ -119,7 +119,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            border-bottom: 1px solid rgba(0,0,0,0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         section:last-of-type {
@@ -170,7 +170,7 @@
         }
 
         .btn-social:hover {
-            background: #044331;
+            background: #059669;
             transform: translateY(-2px);
         }
 
@@ -245,8 +245,8 @@
 
         .project-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
-            border-color: rgba(6, 95, 70, 0.2);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            border-color: rgba(16, 185, 129, 0.3);
         }
 
         .project-title {
@@ -386,7 +386,7 @@
                 border-right: none;
                 border-top: 1px solid var(--glass-border);
                 border-radius: 16px 16px 0 0;
-                background: rgba(255, 255, 255, 0.9);
+                background: rgba(17, 24, 39, 0.9);
             }
 
             .brand, .sidebar-footer {
