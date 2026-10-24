@@ -37,3 +37,16 @@ SOFTWARE.
 - The developer alias **PERO1999**, brand marks, personal assets, and portfolio styling are the intellectual property of **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)).
 - **BedCraftMC**, **LunarMC**, and **Solarium Productions** names, custom graphics, and plugins are proprietary to their respective server networks and teams.
 - **Minecraft** is a registered trademark of **Mojang AB / Microsoft Corporation**. This project, portfolio, and associated plugins are independent creations and are not affiliated with, authorized by, endorsed by, or sponsored by Mojang AB or Microsoft.
+
+---
+
+## 🔗 Repository Navigation & Policies
+
+- **Live Site**: [https://pero1999ita.github.io](https://pero1999ita.github.io)
+- **Documentation**: [README.md](README.md)
+- **Security Policy**: [SECURITY.md](SECURITY.md)
+- **Contribution Guidelines**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — **PERO1999** (`pero1999`)
+- **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)
+
+&copy; 2026 **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)). All rights reserved.
