@@ -110,12 +110,22 @@
         }
 
         .nav-links a {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
             padding: 0.8rem 1.2rem;
             color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
             border-radius: 12px;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links .nav-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            stroke: currentColor;
             transition: var(--transition-smooth);
         }
 
@@ -252,66 +262,241 @@
             transform: translateY(-2px);
         }
 
-        /* --- PROJECTS SECTION --- */
+        /* --- SECTION HEADERS WITH BADGE ICONS --- */
+        .section-header-box {
+            display: flex;
+            align-items: center;
+            gap: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            color: var(--accent-emerald);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .section-header-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .section-header-text h2 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .section-header-text p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+            margin-bottom: 0;
+        }
+
+        /* --- FEATURED PROJECTS --- */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 1.75rem;
         }
 
         .project-card {
             background: var(--bg-secondary);
             border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+            border-radius: 20px;
+            padding: 1.75rem 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
             transition: var(--transition-smooth);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            gap: 1.25rem;
+            position: relative;
         }
 
         .project-card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-5px);
             box-shadow: var(--card-hover-shadow);
             border-color: var(--card-hover-border);
         }
 
-        .project-title {
-            font-size: 1.3rem;
-            margin-bottom: 0.75rem;
+        .project-card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .project-brand-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .project-avatar-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            color: var(--accent-emerald);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .project-avatar-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .project-title-box h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
             color: var(--text-primary);
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .project-domain-sub {
+            font-size: 0.85rem;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .project-status-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.25rem 0.65rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        .status-badge.live {
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--accent-emerald);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .status-badge.dev {
+            background: rgba(148, 163, 184, 0.12);
+            color: var(--text-secondary);
+            border: 1px solid rgba(148, 163, 184, 0.3);
+        }
+
+        .status-badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            display: inline-block;
+        }
+
+        .ext-link-icon {
+            color: var(--text-secondary);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+        }
+
+        .ext-link-icon svg {
+            width: 17px;
+            height: 17px;
+        }
+
+        .ext-link-icon:hover {
+            color: var(--accent-emerald);
+            transform: translate(2px, -2px);
         }
 
         .project-desc {
             color: var(--text-secondary);
             font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
+            line-height: 1.6;
+            margin: 0;
         }
 
-        .project-links {
+        .project-tags-row {
             display: flex;
-            gap: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: auto;
         }
 
-        .project-link {
-            font-size: 0.9rem;
-            font-weight: 600;
+        .proj-pill-tag {
+            background: var(--accent-light);
             color: var(--accent-emerald);
-            text-decoration: none;
+            border: 1px solid var(--glass-border);
+            padding: 0.3rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         }
 
-        .project-link:hover {
-            text-decoration: underline;
+        /* --- GITHUB STATS SECTION --- */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
         }
 
-        .project-link.in-dev {
+        .stat-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+            border-radius: 18px;
+            padding: 2.25rem 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            transition: var(--transition-smooth);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--card-hover-border);
+            box-shadow: var(--card-hover-shadow);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--accent-emerald);
+            letter-spacing: -0.03em;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
             color: var(--text-secondary);
-        }
-
-        .project-link.in-dev:hover {
-            text-decoration: none;
         }
 
         /* --- EXPERIENCE SECTION (TIMELINE) --- */
@@ -519,10 +704,26 @@
             
             <nav>
                 <ul class="nav-links">
-                    <li class="active"><a href="#hero">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li class="active"><a href="#hero">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="#skills">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        <span>Skills</span>
+                    </a></li>
+                    <li><a href="#projects">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <span>Projects</span>
+                    </a></li>
+                    <li><a href="#stats">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        <span>Stats</span>
+                    </a></li>
+                    <li><a href="#experience">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        <span>Experience</span>
+                    </a></li>
                 </ul>
             </nav>
             
