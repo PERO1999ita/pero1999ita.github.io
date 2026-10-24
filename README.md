@@ -25,7 +25,7 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
 ## 🛠️ Tech Stack
 
 - **Markup**: Semantic HTML5
-- **Styling**: Vanilla CSS3 (Custom Design System, Glassmorphism, CSS Custom Properties)
+- **Styling**: Vanilla CSS3 (Custom Dark Theme Design System, Glassmorphism, CSS Custom Properties)
 - **Scripting**: Vanilla JS (ES6+, Intersection Observer API for scroll-driven reveals & dynamic nav tracking)
 - **Hosting**: GitHub Pages (Zero-build static deployment)
 
@@ -35,9 +35,9 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
 
 ```text
 pero1999ita.github.io/
-├── index.html        # Complete portfolio application (HTML, CSS, JS)
+├── index.html        # Complete portfolio application (HTML, CSS Dark Theme, JS)
 ├── CONTRIBUTING.md   # Contribution & collaboration guidelines
-├── LICENSE.md        # MIT license
+├── LICENSE.md        # MIT license & trademark disclaimer
 ├── README.md         # Repository documentation
 └── SECURITY.md       # Vulnerability disclosure policy
 ```
