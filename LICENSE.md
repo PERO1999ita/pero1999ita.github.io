@@ -1,6 +1,8 @@
-MIT License
+# License
 
-Copyright (c) 2026 PERO1999
+## MIT License
+
+**Copyright (c) 2026 PERO1999 (PERO1999ita)**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +21,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Trademark & Brand Disclaimer
+
+The names **PERO1999**, **BedCraftMC**, **Solarium Productions**, and associated logos/assets are proprietary trademarks of their respective owners. Minecraft is a trademark of Mojang AB / Microsoft. This portfolio and project are not affiliated with, endorsed by, or sponsored by Mojang AB or Microsoft.
