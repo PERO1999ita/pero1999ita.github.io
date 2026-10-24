@@ -46,7 +46,11 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
 
 ```text
 pero1999ita.github.io/
+├── assets/
+│   ├── avatar.jpg    # Developer avatar
+│   └── bedcraft.png  # BedCraftMC network logo
 ├── index.html        # Complete portfolio application (HTML, CSS Dual Theme, JS)
+├── .gitignore        # Ignored files and directories
 ├── CONTRIBUTING.md   # Contribution & collaboration guidelines
 ├── LICENSE.md        # MIT license & trademark disclaimer
 ├── README.md         # Repository documentation
