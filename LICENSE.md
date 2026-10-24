@@ -24,6 +24,8 @@ SOFTWARE.
 
 ---
 
-## Trademark & Brand Disclaimer
+## Trademark & Brand Attribution
 
-The names **PERO1999**, **BedCraftMC**, **Solarium Productions**, and associated logos/assets are proprietary trademarks of their respective owners. Minecraft is a trademark of Mojang AB / Microsoft. This portfolio and project are not affiliated with, endorsed by, or sponsored by Mojang AB or Microsoft.
+- The personal alias **PERO1999**, brand marks, and custom assets are the intellectual property of **PERO1999**.
+- **BedCraftMC**, **LunarMC**, and **Solarium Productions** names, custom graphics, and plugins are proprietary to their respective server networks and teams.
+- **Minecraft** is a registered trademark of **Mojang AB / Microsoft Corporation**. This project, portfolio, and associated plugins are independent creations and are not affiliated with, authorized by, endorsed by, or sponsored by Mojang AB or Microsoft.

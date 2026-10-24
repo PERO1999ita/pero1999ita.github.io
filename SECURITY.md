@@ -2,29 +2,48 @@
 
 ## Supported Versions
 
-| Version | Supported          |
-| ------- | ------------------ |
-| Main    | :white_check_mark: |
+Only the latest commit on the `main` branch of this repository is actively maintained and supported.
+
+| Version / Branch | Supported          | Status             |
+| ---------------- | ------------------ | ------------------ |
+| `main`           | :white_check_mark: | Actively Maintained |
+| Other branches   | :x:                | Unsupported        |
+
+---
+
+## Scope
+
+### In-Scope
+- Vulnerabilities within code hosted on `https://pero1999ita.github.io/` (DOM-based XSS, injection vectors, open redirects).
+- Misconfigurations or security gaps in client-side scripts, styles, or external resource loaders.
+- Insecure external references (missing `rel="noopener noreferrer"`).
+- Accidental exposure of secrets, tokens, or credentials in git history.
+
+### Out-of-Scope
+- Infrastructure-level Denial of Service (DoS/DDoS) targeting GitHub Pages or DNS providers.
+- Social engineering, phishing, or physical attacks targeting contributors or staff.
+- Self-XSS or attacks requiring root/jailbroken client devices.
+- Automated vulnerability scanner spam without actionable proof-of-concept.
 
 ---
 
 ## Reporting a Vulnerability
 
-We take the security of this website and all associated services seriously. If you discover a security vulnerability or weakness within this repository or associated domains, please follow coordinated disclosure guidelines:
+We value coordinated vulnerability disclosure. If you discover a vulnerability, please do **not** disclose it publicly.
 
-1. **Do Not Open Public Issues**: Please do not file public GitHub issues for security vulnerabilities.
-2. **Contact Channel**:
-   - Contact via Discord: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) (Open a private ticket or direct message **PERO1999**).
-   - Alternatively, submit a private advisory via GitHub Security Advisories if available.
-3. **Include Details**:
-   - Description of the vulnerability and attack vector.
-   - Proof of Concept (PoC) or reproduction steps.
-   - Potential impact.
+1. **Preferred Channel**:
+   - **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — Open a private support ticket or message **PERO1999**.
+   - **GitHub**: Open a private advisory under the [Security Advisories](https://github.com/PERO1999ita/pero1999ita.github.io/security/advisories) tab.
+2. **Report Details**:
+   - Detailed summary of the potential issue.
+   - Step-by-step reproduction guide or Proof of Concept (PoC).
+   - Expected impact and proposed remediation (if available).
 
 ---
 
-## Response Protocol
+## Response Timeline & Commitment
 
-- **Acknowledgment**: Within 24–48 hours.
-- **Triage & Remediation**: Vulnerability will be assessed and patched promptly.
-- **Public Disclosure**: Coordinated after fixes are deployed to production.
+- **Initial Triage**: Within 24–48 hours.
+- **Remediation**: Patches deployed within 7 business days depending on severity.
+- **Disclosure**: Public disclosure coordinated once production fixes are verified.
+- **Credit**: Responsible reporters will receive formal acknowledgment in release notes and commit history.
