@@ -133,6 +133,9 @@
         }
 
         .sidebar-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
             font-size: 0.85rem;
             color: var(--text-secondary);
         }
@@ -394,36 +397,34 @@
 
         /* --- THEME TOGGLE BUTTON --- */
         .theme-toggle-btn {
-            position: fixed;
-            top: 1.75rem;
-            right: 2.5rem;
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.6rem 1.1rem;
-            background: var(--glass-bg);
+            justify-content: center;
+            gap: 0.6rem;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg-secondary);
             color: var(--text-primary);
             border: 1px solid var(--glass-border);
-            border-radius: 50px;
+            border-radius: 12px;
             cursor: pointer;
-            -webkit-backdrop-filter: blur(16px);
-            backdrop-filter: blur(16px);
-            box-shadow: var(--glass-shadow);
-            font-size: 0.85rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            font-size: 0.9rem;
             font-weight: 600;
-            z-index: 200;
             transition: var(--transition-smooth);
         }
 
         .theme-toggle-btn:hover {
-            transform: translateY(-2px);
             border-color: var(--accent-emerald);
             color: var(--accent-emerald);
+            background: var(--accent-light);
+            transform: translateY(-2px);
         }
 
         .theme-icon-sun, .theme-icon-moon {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
             display: inline-block;
             vertical-align: middle;
         }
@@ -433,10 +434,12 @@
         }
         [data-theme="dark"] .theme-icon-moon {
             display: inline-block;
+            color: #fbbf24;
         }
 
         [data-theme="light"] .theme-icon-sun {
             display: inline-block;
+            color: #f59e0b;
         }
         [data-theme="light"] .theme-icon-moon {
             display: none;
@@ -445,10 +448,17 @@
         /* --- RESPONSIVE MEDIA QUERIES --- */
         @media (max-width: 968px) {
             .theme-toggle-btn {
+                position: fixed;
                 top: 1rem;
                 right: 1.25rem;
-                padding: 0.45rem 0.85rem;
+                width: auto;
+                padding: 0.5rem 0.9rem;
                 font-size: 0.8rem;
+                z-index: 200;
+                background: var(--glass-bg);
+                -webkit-backdrop-filter: blur(16px);
+                backdrop-filter: blur(16px);
+                box-shadow: var(--glass-shadow);
             }
 
             main {
@@ -503,12 +513,6 @@
 <body>
 
     <div class="app-container">
-        
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
-            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            <span class="theme-text">Dark</span>
-        </button>
 
         <aside class="sidebar">
             <div class="brand">PERO1999</div>
@@ -523,7 +527,12 @@
             </nav>
             
             <div class="sidebar-footer">
-                &copy; 2026 PERO1999
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <span class="theme-text">Dark Mode</span>
+                </button>
+                <div class="copyright">&copy; 2026 PERO1999</div>
             </div>
         </aside>
 
@@ -709,7 +718,7 @@
                 document.documentElement.setAttribute('data-theme', theme);
                 localStorage.setItem('theme', theme);
                 if (themeText) {
-                    themeText.textContent = theme === 'dark' ? 'Dark' : 'Light';
+                    themeText.textContent = theme === 'dark' ? 'Dark Mode' : 'Light Mode';
                 }
             };
 
