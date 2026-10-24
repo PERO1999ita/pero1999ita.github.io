@@ -9,9 +9,10 @@ Official personal portfolio of **PERO1999** (SysAdmin & Software Developer). Hos
 Modern, responsive glassmorphic portfolio highlighting development projects, technical proficiencies, and systems administration experience.
 
 ### Key Highlights
+- **Interactive Theme Switcher**: Glassmorphic toggle between Dark mode (default) and Light mode with `localStorage` state persistence.
 - **Hero & Identity**: Direct links to official Discord hub and GitHub profile.
 - **Skills Matrix**:
-  - **Languages**: Java, JavaScript, HTML5, CSS3
+  - **Languages**: Java, Kotlin, PHP, JavaScript, HTML5, CSS3, YAML, XML
   - **Backend & Systems**: Node.js, Express, JVM / GraalVM
   - **Frontend**: React, Next.js, Three.js, CSS Animations
   - **Tools**: Git, Linux
@@ -25,8 +26,8 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
 ## 🛠️ Tech Stack
 
 - **Markup**: Semantic HTML5
-- **Styling**: Vanilla CSS3 (Custom Dark Theme Design System, Glassmorphism, CSS Custom Properties)
-- **Scripting**: Vanilla JS (ES6+, Intersection Observer API for scroll-driven reveals & dynamic nav tracking)
+- **Styling**: Vanilla CSS3 (Dual-Theme Dark/Light Design System, Glassmorphism, CSS Custom Properties)
+- **Scripting**: Vanilla JS (Theme controller with `localStorage`, Intersection Observer API for scroll reveals & dynamic nav tracking)
 - **Hosting**: GitHub Pages (Zero-build static deployment)
 
 ---

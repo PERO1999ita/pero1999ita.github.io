@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PERO1999 | Portfolio</title>
     <style>
-        /* --- DESIGN SYSTEM & VARIABLES (DARK THEME) --- */
-        :root {
+        /* --- DESIGN SYSTEM & THEME TOKENS --- */
+        :root, [data-theme="dark"] {
             --bg-primary: #0a0f1d;     /* Deep Void Dark Background */
             --bg-secondary: #111827;   /* Sleek Dark Navy Card Background */
             --text-primary: #f8fafc;   /* Crisp Pure White Text */
@@ -18,7 +18,32 @@
             --glass-bg: rgba(17, 24, 39, 0.75);
             --glass-border: rgba(255, 255, 255, 0.08);
             --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+            --border-section: rgba(255, 255, 255, 0.05);
+            --card-hover-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            --card-hover-border: rgba(16, 185, 129, 0.3);
+            --mobile-sidebar-bg: rgba(17, 24, 39, 0.95);
+            --btn-hover-bg: #059669;
+            --nav-active-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #f1f5f9;     /* Modern Light Gray Background */
+            --bg-secondary: #ffffff;   /* Pure White for Cards/Elements */
+            --text-primary: #0f172a;   /* Deep Slate/Near Black */
+            --text-secondary: #475569; /* Slate Gray */
+            --accent-emerald: #065f46; /* Deep Luxury Emerald */
+            --accent-mint: #cbd5e1;    /* Clean Gray Border Accent */
+            --accent-light: #f8fafc;   /* Ultra Light Gray Hover State */
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(15, 23, 42, 0.08);
+            --glass-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.06);
+            --border-section: rgba(0, 0, 0, 0.05);
+            --card-hover-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+            --card-hover-border: rgba(6, 95, 70, 0.25);
+            --mobile-sidebar-bg: rgba(255, 255, 255, 0.95);
+            --btn-hover-bg: #044331;
+            --nav-active-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
         }
 
         /* --- BASE STYLES --- */
@@ -104,7 +129,7 @@
             color: var(--accent-emerald);
             background: var(--bg-secondary);
             font-weight: 600;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 4px 0 0 var(--accent-emerald);
+            box-shadow: var(--nav-active-shadow), inset 4px 0 0 var(--accent-emerald);
         }
 
         .sidebar-footer {
@@ -119,7 +144,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid var(--border-section);
         }
 
         section:last-of-type {
@@ -170,7 +195,7 @@
         }
 
         .btn-social:hover {
-            background: #059669;
+            background: var(--btn-hover-bg);
             transform: translateY(-2px);
         }
 
@@ -245,8 +270,8 @@
 
         .project-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-            border-color: rgba(16, 185, 129, 0.3);
+            box-shadow: var(--card-hover-shadow);
+            border-color: var(--card-hover-border);
         }
 
         .project-title {
@@ -367,8 +392,65 @@
             transform: translateY(0);
         }
 
+        /* --- THEME TOGGLE BUTTON --- */
+        .theme-toggle-btn {
+            position: fixed;
+            top: 1.75rem;
+            right: 2.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.1rem;
+            background: var(--glass-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            cursor: pointer;
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+            box-shadow: var(--glass-shadow);
+            font-size: 0.85rem;
+            font-weight: 600;
+            z-index: 200;
+            transition: var(--transition-smooth);
+        }
+
+        .theme-toggle-btn:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-emerald);
+            color: var(--accent-emerald);
+        }
+
+        .theme-icon-sun, .theme-icon-moon {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        [data-theme="dark"] .theme-icon-sun {
+            display: none;
+        }
+        [data-theme="dark"] .theme-icon-moon {
+            display: inline-block;
+        }
+
+        [data-theme="light"] .theme-icon-sun {
+            display: inline-block;
+        }
+        [data-theme="light"] .theme-icon-moon {
+            display: none;
+        }
+
         /* --- RESPONSIVE MEDIA QUERIES --- */
         @media (max-width: 968px) {
+            .theme-toggle-btn {
+                top: 1rem;
+                right: 1.25rem;
+                padding: 0.45rem 0.85rem;
+                font-size: 0.8rem;
+            }
+
             main {
                 margin-left: 0;
                 padding: 2rem 2rem 7rem 2rem;
@@ -386,7 +468,7 @@
                 border-right: none;
                 border-top: 1px solid var(--glass-border);
                 border-radius: 16px 16px 0 0;
-                background: rgba(17, 24, 39, 0.9);
+                background: var(--mobile-sidebar-bg);
             }
 
             .brand, .sidebar-footer {
@@ -422,6 +504,12 @@
 
     <div class="app-container">
         
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <span class="theme-text">Dark</span>
+        </button>
+
         <aside class="sidebar">
             <div class="brand">PERO1999</div>
             
@@ -460,9 +548,13 @@
                         <h3>Languages</h3>
                         <div class="skills-grid">
                             <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">JavaScript</span>
                             <span class="skill-tag">HTML</span>
                             <span class="skill-tag">CSS</span>
-                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">YAML</span>
+                            <span class="skill-tag">XML</span>
                         </div>
                     </div>
 
@@ -608,6 +700,29 @@
             }, navObserverOptions);
 
             sections.forEach(section => navObserver.observe(section));
+
+            // 3. THEME TOGGLE CONTROLLER
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeText = themeToggleBtn ? themeToggleBtn.querySelector('.theme-text') : null;
+
+            const applyTheme = (theme) => {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                if (themeText) {
+                    themeText.textContent = theme === 'dark' ? 'Dark' : 'Light';
+                }
+            };
+
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            applyTheme(savedTheme);
+
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', () => {
+                    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+                    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    applyTheme(nextTheme);
+                });
+            }
         });
     </script>
 </body>
