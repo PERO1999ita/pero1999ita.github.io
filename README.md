@@ -10,12 +10,13 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
 
 ### Key Highlights
 - **Interactive Theme Switcher**: Glassmorphic toggle between Dark mode (default) and Light mode with `localStorage` state persistence.
-- **Hero & Identity**: Direct links to official Discord hub and GitHub profile.
+- **Hero & Identity**: Direct links to official Discord hub and GitHub profile with professional bio.
+- **Live GitHub Statistics**: Real-time counter cards dynamically fetching from GitHub API with fallback indicators.
 - **Skills Matrix**:
   - **Languages**: Java, Kotlin, PHP, JavaScript, HTML5, CSS3, YAML, XML
   - **Backend & Systems**: Node.js, Express, JVM / GraalVM
   - **Frontend**: React, Next.js, Three.js, CSS Animations
-  - **Tools**: Git, Linux, Windows
+  - **Tools**: Git, Linux, Windows, VS Code, Antigravity IDE
 - **Projects**:
   - **BedCraftMC**: Minecraft server network architecture, custom game modes (BedWars), bespoke plugins.
   - **Solarium Productions**: Dedicated Minecraft assets, client modules, macros, and animations.
