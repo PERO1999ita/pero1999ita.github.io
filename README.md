@@ -15,7 +15,7 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
   - **Languages**: Java, Kotlin, PHP, JavaScript, HTML5, CSS3, YAML, XML
   - **Backend & Systems**: Node.js, Express, JVM / GraalVM
   - **Frontend**: React, Next.js, Three.js, CSS Animations
-  - **Tools**: Git, Linux
+  - **Tools**: Git, Linux, Windows
 - **Projects**:
   - **BedCraftMC**: Minecraft server network architecture, custom game modes (BedWars), bespoke plugins.
   - **Solarium Productions**: Dedicated Minecraft assets, client modules, macros, and animations.
