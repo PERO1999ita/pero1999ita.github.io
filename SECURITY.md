@@ -32,8 +32,8 @@ Only the latest commit on the `main` branch of this repository is actively maint
 We value coordinated vulnerability disclosure. If you discover a vulnerability, please do **not** disclose it publicly.
 
 1. **Preferred Channel**:
-   - **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — Open a private support ticket or message **PERO1999**.
-   - **GitHub**: Open a private advisory under the [Security Advisories](https://github.com/PERO1999ita/pero1999ita.github.io/security/advisories) tab.
+   - **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — Open a private support ticket or contact **PERO1999**.
+   - **GitHub**: Open a private advisory under the [Security Advisories](https://github.com/PERO1999ita/pero1999ita.github.io/security/advisories) tab for [@PERO1999ita](https://github.com/PERO1999ita).
 2. **Report Details**:
    - Detailed summary of the potential issue.
    - Step-by-step reproduction guide or Proof of Concept (PoC).

@@ -2,7 +2,7 @@
 
 ## MIT License
 
-**Copyright (c) 2026 PERO1999 (PERO1999ita)**
+**Copyright (c) 2026 PERO1999 (GitHub: @PERO1999ita)**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,6 +26,6 @@ SOFTWARE.
 
 ## Trademark & Brand Attribution
 
-- The personal alias **PERO1999**, brand marks, and custom assets are the intellectual property of **PERO1999**.
+- The developer alias **PERO1999**, brand marks, personal assets, and portfolio styling are the intellectual property of **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)).
 - **BedCraftMC**, **LunarMC**, and **Solarium Productions** names, custom graphics, and plugins are proprietary to their respective server networks and teams.
 - **Minecraft** is a registered trademark of **Mojang AB / Microsoft Corporation**. This project, portfolio, and associated plugins are independent creations and are not affiliated with, authorized by, endorsed by, or sponsored by Mojang AB or Microsoft.

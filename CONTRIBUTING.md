@@ -1,6 +1,6 @@
 # Contributing & Collaboration Guidelines
 
-Thank you for your interest in contributing to **pero1999ita.github.io**! This document outlines our collaboration workflow, code quality expectations, and community standards.
+Thank you for your interest in contributing to **pero1999ita.github.io**! This document outlines our collaboration workflow, code quality expectations, and community standards for the portfolio of **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)).
 
 ---
 
@@ -65,5 +65,5 @@ Before submitting a Pull Request, verify the following:
 ## Collaboration & Inquiries
 
 For project partnerships, custom plugin architecture, or server infrastructure queries:
-- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/)
+- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — Contact **PERO1999**
 - **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)

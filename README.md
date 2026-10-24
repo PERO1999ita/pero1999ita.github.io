@@ -4,6 +4,15 @@ Official personal portfolio of **PERO1999** (SysAdmin & Software Developer). Hos
 
 ---
 
+## 👤 Identity & Developer Profile
+
+- **Developer Alias**: **PERO1999**
+- **GitHub Handle**: [@PERO1999ita](https://github.com/PERO1999ita)
+- **Role**: SysAdmin & Software Developer
+- **Bio**: Passionate systems administrator and software developer specializing in high-performance server architectures, custom Minecraft network ecosystems (BedCraftMC), and modern web engineering. Dedicated to crafting resilient infrastructure, bespoke plugins, and seamless digital experiences.
+
+---
+
 ## 🚀 Overview
 
 Modern, responsive glassmorphic portfolio highlighting development projects, technical proficiencies, and systems administration experience.
@@ -37,7 +46,7 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
 
 ```text
 pero1999ita.github.io/
-├── index.html        # Complete portfolio application (HTML, CSS Dark Theme, JS)
+├── index.html        # Complete portfolio application (HTML, CSS Dual Theme, JS)
 ├── CONTRIBUTING.md   # Contribution & collaboration guidelines
 ├── LICENSE.md        # MIT license & trademark disclaimer
 ├── README.md         # Repository documentation
@@ -46,16 +55,15 @@ pero1999ita.github.io/
 
 ---
 
-## 🌐 Links
+## 🌐 Official Links
 
 - **Live Site**: [https://pero1999ita.github.io](https://pero1999ita.github.io)
-- **Discord**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/)
-- **GitHub**: [@PERO1999ita](https://github.com/PERO1999ita)
+- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/)
+- **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)
 
 ---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-&copy; 2026 PERO1999. All rights reserved.
+Copyright (c) 2026 **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)).
