@@ -65,5 +65,5 @@ Before submitting a Pull Request, verify the following:
 ## Collaboration & Inquiries
 
 For project partnerships, custom plugin architecture, or server infrastructure queries:
-- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — Contact **PERO1999**
+- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — Contact **PERO1999** (`pero1999`)
 - **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)

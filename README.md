@@ -7,6 +7,7 @@ Official personal portfolio of **PERO1999** (SysAdmin & Software Developer). Hos
 ## 👤 Identity & Developer Profile
 
 - **Developer Alias**: **PERO1999**
+- **Discord**: **PERO1999** (`pero1999`)
 - **GitHub Handle**: [@PERO1999ita](https://github.com/PERO1999ita)
 - **Role**: SysAdmin & Software Developer
 - **Bio**: Passionate systems administrator and software developer specializing in high-performance server architectures, custom Minecraft network ecosystems (BedCraftMC), and modern web engineering. Dedicated to crafting resilient infrastructure, bespoke plugins, and seamless digital experiences.
@@ -27,9 +28,10 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
   - **Frontend**: React, Next.js, Three.js, CSS Animations
   - **Tools**: Git, Linux, Windows, VS Code, Antigravity IDE
 - **Projects**:
-  - **BedCraftMC**: Minecraft server network architecture, custom game modes (BedWars), bespoke plugins.
+  - **BedCraftMC**: High-quality Minecraft server network (`play.bedcraftmc.eu`), custom BedWars gamemode, bespoke Paper/Spigot/Bukkit plugins.
   - **Solarium Productions**: Dedicated Minecraft assets, client modules, macros, and animations.
 - **Experience Timeline**: Leadership roles across BedCraftMC and LunarMC.
+- **Contact & Inquiries**: Dedicated `#contact` section with Discord ticket routing, GitHub collaboration, and systems consulting.
 
 ---
 
@@ -47,8 +49,8 @@ Modern, responsive glassmorphic portfolio highlighting development projects, tec
 ```text
 pero1999ita.github.io/
 ├── assets/
-│   ├── avatar.jpg    # Developer avatar
-│   └── bedcraft.png  # BedCraftMC network logo
+│   ├── avatar.jpg    # Developer avatar (PERO1999)
+│   └── bedcraft.png  # BedCraftMC network brand logo
 ├── index.html        # Complete portfolio application (HTML, CSS Dual Theme, JS)
 ├── .gitignore        # Ignored files and directories
 ├── CONTRIBUTING.md   # Contribution & collaboration guidelines
@@ -62,7 +64,7 @@ pero1999ita.github.io/
 ## 🌐 Official Links
 
 - **Live Site**: [https://pero1999ita.github.io](https://pero1999ita.github.io)
-- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/)
+- **Discord Hub**: [discord.bedcraftmc.eu](https://discord.bedcraftmc.eu/) — **PERO1999** (`pero1999`)
 - **GitHub Profile**: [@PERO1999ita](https://github.com/PERO1999ita)
 
 ---

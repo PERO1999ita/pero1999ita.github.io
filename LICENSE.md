@@ -24,6 +24,14 @@ SOFTWARE.
 
 ---
 
+## 🚫 Asset & Image Restrictions (`assets/`)
+
+- **Proprietary Media Exclusion**: All media, graphics, avatars, brand assets, and logos situated in the [`assets/`](assets/) directory (including [`assets/avatar.jpg`](assets/avatar.jpg) and [`assets/bedcraft.png`](assets/bedcraft.png)) are **strictly excluded** from the MIT License terms.
+- **Commercial Use Prohibited**: It is strictly forbidden to copy, redistribute, sublicense, modify, or exploit any image or asset from `assets/` for commercial purposes, promotional campaigns, or third-party platforms without prior explicit written permission from **PERO1999** or the official **BedCraftMC** administration.
+- **All Rights Reserved**: Copyright &copy; 2026 PERO1999 & BedCraftMC Network. All respective media rights reserved.
+
+---
+
 ## Trademark & Brand Attribution
 
 - The developer alias **PERO1999**, brand marks, personal assets, and portfolio styling are the intellectual property of **PERO1999** (GitHub: [@PERO1999ita](https://github.com/PERO1999ita)).
