@@ -115,13 +115,8 @@
             width: 40px;
             height: 40px;
             border-radius: 11px;
-            background: linear-gradient(135deg, var(--accent-emerald), #059669);
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 1.2rem;
+            object-fit: cover;
+            border: 1.5px solid var(--accent-emerald);
             box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
             flex-shrink: 0;
             -webkit-user-select: none;
@@ -469,6 +464,119 @@
             transform: translateY(-2px);
         }
 
+        .btn-social.outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px dashed var(--glass-border);
+        }
+
+        .btn-social.outline:hover {
+            border-color: var(--accent-emerald);
+            color: var(--accent-emerald);
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        /* --- CONTACT SECTION --- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(16, 185, 129, 0.35);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.08);
+        }
+
+        .contact-card-top {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--accent-light);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            color: var(--accent-emerald);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .contact-card-info h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .contact-card-info .contact-sub {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            margin-top: 0.2rem;
+        }
+
+        .contact-card-body p {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .contact-card-action {
+            margin-top: auto;
+        }
+
+        .btn-contact-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--accent-light);
+            color: var(--accent-emerald);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-contact-action:hover {
+            background: var(--accent-emerald);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
         /* --- SKILLS SECTION --- */
         .skills-category {
             margin-bottom: 2rem;
@@ -545,6 +653,18 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+        }
+
+        .project-avatar-img {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            object-fit: cover;
+            background: #0d1527;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+            display: block;
         }
 
         .project-avatar-icon {
@@ -866,7 +986,7 @@
 
         <aside class="sidebar">
             <div class="brand">
-                <div class="brand-avatar">P</div>
+                <img src="assets/avatar.jpg" alt="PERO1999" class="brand-avatar">
                 <div class="brand-meta">
                     <div class="brand-name-row">
                         <span class="brand-name">PERO1999</span>
@@ -897,6 +1017,10 @@
                     <li><a href="#experience">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
                         <span>Experience</span>
+                    </a></li>
+                    <li><a href="#contact">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>Contact</span>
                     </a></li>
                 </ul>
             </nav>
@@ -930,6 +1054,7 @@
                     <div class="social-container">
                         <a href="https://discord.bedcraftmc.eu/" class="btn-social" target="_blank" rel="noopener noreferrer">Join Discord</a>
                         <a href="https://github.com/PERO1999ita" class="btn-social secondary" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                        <a href="#contact" class="btn-social outline">Contact Me</a>
                     </div>
                 </div>
             </section>
@@ -1141,6 +1266,99 @@
                                 Established and managed system processes beginning in early 2023. Successfully managed systems lifecycle up until intentional termination, actively migrating community pillars over to the BedCraftMC infrastructure matrix.
                             </div>
                         </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="reveal">
+                    <div class="section-header-box">
+                        <div class="section-header-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="section-header-text">
+                            <h2>Get In Touch</h2>
+                            <p>Have an infrastructure challenge, custom Minecraft plugin request, or development opportunity?</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-grid">
+                        
+                        <article class="contact-card">
+                            <div class="contact-card-top">
+                                <div class="contact-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-card-info">
+                                    <h3>Discord Hub</h3>
+                                    <div class="contact-sub">Official Community &amp; Tickets</div>
+                                </div>
+                            </div>
+                            <div class="contact-card-body">
+                                <p>Join the official BedCraftMC Discord network to open a private ticket, discuss plugin features, or connect with <strong>PERO1999</strong> directly.</p>
+                            </div>
+                            <div class="contact-card-action">
+                                <a href="https://discord.bedcraftmc.eu/" class="btn-contact-action" target="_blank" rel="noopener noreferrer">
+                                    <span>Join Discord Hub</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="contact-card">
+                            <div class="contact-card-top">
+                                <div class="contact-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-card-info">
+                                    <h3>GitHub Collaboration</h3>
+                                    <div class="contact-sub">Repositories &amp; Issues</div>
+                                </div>
+                            </div>
+                            <div class="contact-card-body">
+                                <p>Explore repositories, submit issues, or initiate collaboration on active open source projects via GitHub handle <strong>@PERO1999ita</strong>.</p>
+                            </div>
+                            <div class="contact-card-action">
+                                <a href="https://github.com/PERO1999ita" class="btn-contact-action" target="_blank" rel="noopener noreferrer">
+                                    <span>Visit GitHub Profile</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="contact-card">
+                            <div class="contact-card-top">
+                                <div class="contact-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                    </svg>
+                                </div>
+                                <div class="contact-card-info">
+                                    <h3>Systems &amp; Consulting</h3>
+                                    <div class="contact-sub">Inquiries &amp; Architecture</div>
+                                </div>
+                            </div>
+                            <div class="contact-card-body">
+                                <p>Available for Linux server administration, network performance profiling, and Spigot/Paper architecture consultation.</p>
+                            </div>
+                            <div class="contact-card-action">
+                                <a href="https://discord.bedcraftmc.eu/" class="btn-contact-action" target="_blank" rel="noopener noreferrer">
+                                    <span>Send Inquiry</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                        </article>
 
                     </div>
                 </div>
