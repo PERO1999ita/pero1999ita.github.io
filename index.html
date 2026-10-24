@@ -934,6 +934,25 @@
                     applyTheme(nextTheme);
                 });
             }
+
+            // 4. GITHUB LIVE STATS
+            const fetchGitHubStats = async () => {
+                try {
+                    const res = await fetch('https://api.github.com/users/PERO1999ita');
+                    if (res.ok) {
+                        const data = await res.json();
+                        const reposEl = document.getElementById('stat-repos');
+                        const followersEl = document.getElementById('stat-followers');
+                        const followingEl = document.getElementById('stat-following');
+                        if (reposEl && data.public_repos !== undefined) reposEl.textContent = data.public_repos;
+                        if (followersEl && data.followers !== undefined) followersEl.textContent = data.followers;
+                        if (followingEl && data.following !== undefined) followingEl.textContent = data.following;
+                    }
+                } catch (e) {
+                    // Graceful fallback to static counters (3, 0, 3, 4)
+                }
+            };
+            fetchGitHubStats();
         });
     </script>
 </body>
